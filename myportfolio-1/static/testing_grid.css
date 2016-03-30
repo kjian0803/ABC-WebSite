@@ -1,0 +1,74 @@
+.container {
+	width: 1400px;
+	margin-right: auto;
+	margin-left: auto;
+}
+.seven:first-child,.eight:first-child,.nine:first-child,.ten:first-child,
+.eleven:first-child,.five:first-child,.four:first-child,.three:first-child,
+.two:first-child,.one:first-child,.six:first-child {
+	margin-left: 0;
+	/* makes the left-most column align to the left of the streen */
+}
+.eleven {
+	width: 91.5%;
+	float: left;
+	margin-left: 2%;
+}
+.ten {
+	width: 83%;
+	float: left;
+	margin-left: 2%;
+}
+.nine {
+	width: 74.5%;
+	float: left;
+	margin-left: 2%;
+}
+.eight {
+	width: 66%;
+	float: left;
+	margin-left: 2%;
+}
+.seven {
+	width: 57.5%;
+	float: left;
+	margin-left: 2%;
+}
+.six {
+	width: 40.5%;
+	float: left;
+	margin-left: 2%;
+}
+.five {
+	width: 40.5%;
+	margin-left: 2%;
+	float: left;
+}
+.four {
+	width: 32%;
+	float: left;
+	margin-left: 2%;
+}
+.three {
+	width: 23.5%;
+	float: left;
+	margin-left: 2%;
+}
+.two {
+	width: 15%;
+	float: left;
+	margin-left: 2%;
+}
+.one {
+	width: 6.5%;
+	float: left;
+	margin-left: 2%;
+}
+.row {
+	width: 100%;
+	clear: both;
+	padding: 0px;
+	margin: 0px;
+}
+/* if something want to span entire width of container, jsut create a new row */
+

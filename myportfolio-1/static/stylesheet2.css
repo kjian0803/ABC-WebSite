@@ -1,0 +1,442 @@
+img {
+	display: inline-block;
+	width: 15%;
+}
+
+.boxed0 {
+	border: 0.1px solid black;
+	background-color:white;
+}
+
+h1 {
+	display:inline-block;
+	color:black;
+	background-color:none;
+	text-decoration:underline;
+	font-size:300%;
+	padding-top:5%;
+}
+
+h2 {
+	display:inline-block;
+	color: black;
+	font-size:100%;
+}
+
+h3 {
+	color: white;
+}
+
+body {
+	background: url("meettheboardbg.png");
+	background-size: 117%;
+	min-height: 1500px;
+}
+
+a {
+	text-decoration:none;
+	color:inherit;
+}
+
+/*header {
+	background: #00795f;
+	width: 100%;
+	padding: 40px 0;
+	color: white;
+	text-align: center;
+}*/
+nav ul {
+	background-color: #000033;
+	overflow: hidden;
+	color:white;
+	padding: 0;
+	text-align: center;
+	margin: 0;
+	max-height:0;
+	-websit-transition: max-height 0.4s;
+	-ms-transition: max-height 0.4s;
+	-moz-transition: max-height 0.4s;
+	-o-transition: max-height 0.4s;
+	transition: max-height 0.4s;
+}
+nav ul li {
+	/*display: inline-block;*/
+
+	box-sizing: border-box;
+	display:block;
+	text-align:left;
+	padding: 15px;
+}
+
+nav ul li:hover {
+	background-color: #d9d9d9;
+}
+
+#currentconference {
+	background: url("currentconference.png");
+	background-size:117%;
+}
+
+.boxed1 {
+	border: 1px solid black;
+	background-color:white;
+	opacity:0.6;
+	text-align:center;
+}
+
+#header1 {
+	font-size: 250%;
+	font-family:Arial;
+	font-style:oblique;
+	text-align:center;
+}
+
+#header2 {
+	font-size:150%;
+	font-family:Arial;
+	font-style:oblique;
+	text-align:center;
+}
+
+.boxed2 {
+	border: 1px solid black;
+	background-color:#f2f2f2;
+	opacity: 1;
+	text-align:left;
+	margin-top:2.5%;
+	margin-bottom:2.5%;
+	margin-left:5%;
+	margin-right:5%;
+	min-height: 1200px;
+}
+
+.title1 {
+	text-align: center;
+	font-size: 150%;
+}
+
+.container {
+	width: 100%;
+	min-height: 1000px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.four:first-child {
+	margin-left: 0;
+}
+
+.four {
+	width: 100%;
+	float: left;
+	margin: 5px 0px 5px 0px;
+}
+
+.row {
+	width: 100%;
+	clear: both;
+	padding: 0px;
+	margin: 0px;
+}
+
+.row1 .four {
+	/*height: 287px;*/
+	height: 287px;
+}
+
+.row1 .left {
+	background: url("Siyi_img.jpg") no-repeat center center;
+	background-size:60%;
+
+}
+
+.four_left_description_1 {
+	margin-left: 20%;
+}
+
+.row1 .middle {
+	background:url("Cherry_img.JPG") no-repeat center center;
+	background-size:60%;
+}
+
+.four_middle_description_1 {
+	margin-left: 20%;
+}
+
+.row1 .right {
+	background:url("Dianne_img.jpg") no-repeat center center;
+	background-size:60%;
+}
+
+.four_right_description_1 {
+	margin-left:20%;
+}
+
+.row1-2 .four {
+	display:none;
+}
+
+.row2 .four {
+	height: 287px;
+}
+
+.row2 .left {
+	background:url("Justin_img.jpg") no-repeat center center;
+	background-size:60%;
+}
+
+.four_left_description_2 {
+	margin-left: 20%;
+}
+
+.row2 .middle {
+	background:url("someone_img.jpg") no-repeat center center;
+	background-size:60%;
+}
+
+.four_middle_description_2 {
+	margin-left: 20%;
+}
+
+.row2 .right {
+	background:url("Rex_img.png") no-repeat center center;
+	background-size:60%;
+}
+
+.four_right_description_2 {
+	margin-left: 20%;
+}
+
+.row2-2 .four {
+	display:none;
+}
+
+.row3 .four {
+	height: 287px;
+}
+
+.row3 .left {
+	background:url("Rahul_img.jpg") no-repeat center center;
+	background-size:60%;
+}
+
+.four_left_description_3 {
+	margin-left: 20%;
+}
+
+.row3 .middle {
+	background:url("Jennifer_img.jpg") no-repeat center center;
+	background-size:60%;
+}
+
+.four_middle_description_3 {
+	margin-left: 20%;
+}
+
+.row3 .right {
+	background:url("George_img.png") no-repeat center center;
+	background-size: 60%;
+}
+
+.four_right_description_3 {
+	margin-left: 20%;
+}
+
+.row3-2 .four {
+	display:none;
+}
+
+.handle {
+	width: 100%;
+	background: #000033;
+	text-align: left;
+	box-sizing: border-box;
+	padding: 15px 10px;
+	cursor: pointer;
+	color: white;
+	display: block;
+}
+
+.showing {
+	max-height: 20em;
+}
+
+
+footer {
+	background-color: #000033;
+	color: white;
+	padding-top:0.5%;
+	padding-bottom:0.25%;
+}
+
+footer p {
+	display: inline-block;
+}
+
+footer ul a {
+	display: block;
+}
+
+@media screen and (min-width: 610px) {
+
+	nav ul {
+		max-height: 100%;
+		background-color: transparent;
+	}
+
+	nav ul li {
+		display: inline-block;
+		text-decoration: underline;
+		font-weight: bold;
+		padding-left: 9%;
+		padding-right: 9%;
+	}
+
+	.handle {
+		display:none;
+	}
+
+	nav ul li:hover {
+		background-color: transparent;
+		color:yellow;
+	}
+
+	footer p {
+		display: inline-block;
+	}
+
+	footer ul a {
+		display: inline-block;
+	}
+}
+
+@media screen and (min-width: 950px) {
+
+	nav ul {
+		max-height: 100%;
+		background-color:#000033;
+	}
+
+	.showing {
+		max-height: 20em;
+	}
+
+	nav ul li {
+		/*box-sizing: border-box;
+		width: 100%;
+		padding: 15px;
+		text-align:left;*/
+		display: inline-block;
+		padding: 20px;
+		text-decoration: none;
+		font-weight: normal;
+	}
+
+	.handle {
+		display:none;
+	}
+
+	nav ul li:hover {
+		color: inherit;
+		background-color:#d9d9d9;
+	}
+
+	.four {
+		width: 30%;
+		margin-left: 5%;
+		margin-right:0;
+		margin-top:0;
+		margin-bottom:0;
+	}
+
+	.four_left_description_1 {
+		display: none;
+	}
+
+	.four_middle_description_1 {
+		display: none;
+	}
+
+	.four_right_description_1 {
+		display: none;
+	}
+
+	.four_left_description_2 {
+		display: none;
+	}
+
+	.four_middle_description_2 {
+		display: none;
+	}
+
+	.four_right_description_2 {
+		display: none;
+	}
+
+	.four_left_description_3 {
+		display: none;
+	}
+
+	.four_middle_description_3 {
+		display: none;
+	}
+
+	.four_right_description_3 {
+		display: none;
+	}
+
+	.row1 .left {
+		background-size: 100%;
+	}
+
+	.row1 .middle {
+		background-size: 100%;
+	}
+
+	.row1 .right {
+		background-size: 100%;
+	}
+
+	.row2 .left {
+		background-size: 100%;
+	}
+
+	.row2 .middle {
+		background-size: 100%;
+	}
+
+	.row2 .right {
+		background-size: 130%;
+	}
+
+	.row3 .left {
+		background-size: 100%;
+	}
+
+	.row3 .middle {
+		background-size: 100%;
+	}
+
+	.row3 .right {
+		background-size: 100%;
+	}
+
+	.row1-2 .four {
+		display:inline-block;
+		height: 50px;
+		background-color:transparent;
+	}
+
+	.row2-2 .four {
+		display: inline-block;
+		height: 50px;
+		background-color:transparent;
+	}
+
+	.row3-2 .four {
+		display: inline-block;
+		height: 50px;
+		background-color:transparent;
+	}
+}
+

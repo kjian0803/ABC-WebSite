@@ -1,0 +1,19 @@
+{% extends "templates/base.html" %}
+
+{% block head %}
+<h2>Login</h2>
+{% endblock %}
+
+{% block nav4 %}
+<a href = "login.html">LOG In</a>
+{% endblock %}
+
+{% block content %}
+{{msg}}
+<form action = "/login.html" method = "post">
+	<label>username: <input type = "text" name="name"></label>
+	<label>password: <input type = "password" name = "pw"></label>
+	<input type = "submit" value = "login">
+</form>
+{% endblock %}
+

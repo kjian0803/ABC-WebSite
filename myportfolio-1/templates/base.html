@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>{{title}}</title>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+	{% block style %}
+	<link rel="stylesheet" type="text/css" href="static/stylesheet.css"/>	
+	{% endblock %}
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+</head>
+<body>
+	<header>
+		<div class="boxed0">
+			<img class = "logoimg" src = "static/logo.png" alt = "Logo Image"/>
+			<h1>Asia Business Conference</h1>
+			<h2>Asia is rising, join us to witness this moment</h2>
+		</div>
+		{% block head %}
+		Head stuff here
+		{% endblock %}
+		<div class="boxed1">
+			<p id = "header1">
+			Ross Asia Business Conference
+			</p>
+			<p id = "header2">
+			The University of Michigan, Stephen M. Ross School of Business
+			</p>
+		</div>
+		<nav>
+			<ul class = "showing">
+				{% block nav1 %}
+				<a href = "aboutus.html"><li>About Us</li></a>
+				{% endblock %}
+				{% block nav2 %}
+				<a href = "meettheboards.html"><li>Meet the Boards</li></a>
+				{% endblock %}
+				{% block nav3 %}
+				<a href = "previousconference.html"><li>Previous Conferences</li></a>
+				{% endblock %}
+				{% block nav4 %}
+				<a href = "currentconference.html"><li>Current Conference</li></a>
+				{% endblock %}
+				{% block nav5 %}
+				<a href = "knowoursponsors.html"><li>Know Our Sponsors</li></a>
+				{% endblock %}
+				{% block nav6 %}
+				<a href = "login.html"><li>Log In</li></a>
+				{% endblock %}
+			</ul>
+			<div class = "handle">Menu</div>
+		</nav>
+
+
+	</header>
+
+	<div class="boxed2">
+		{% block content %}
+		I should never see this content. It should be replaced.
+		{% endblock %}
+	</div>
+
+	<script>
+		$('.handle').on('click', function() {
+			$('nav ul').toggleClass('showing')
+		});
+	</script>
+
+	<footer>
+		<p>
+			&copy; Ross School of Business <br>
+			rossabc2014@gmail.com <br>
+		</p>
+		<ul> 
+			<a href = "https://www.facebook.com/rossabc/?fref=ts">ABC Facebook Page</a>
+			<a href = "http://michiganross.umich.edu/">Ross School of Business</a>
+		</ul>
+	</footer>
+</body>
+</html>
